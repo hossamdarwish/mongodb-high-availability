@@ -278,9 +278,9 @@ configure_mongodb()
 	chown -R mongodb:mongodb "$MONGODB_DATA/log"
 	chmod 755 "$MONGODB_DATA"
 	
-	mkdir /var/run/mongodb
-	touch /var/run/mongodb/mongod.pid
-	chmod 777 /var/run/mongodb/mongod.pid
+	# mkdir /var/run/mongodb
+	# touch /var/run/mongodb/mongod.pid
+	# chmod 777 /var/run/mongodb/mongod.pid
 	
 	tee /etc/mongod.conf > /dev/null <<EOF
 systemLog:
@@ -290,7 +290,7 @@ systemLog:
     logAppend: true
 processManagement:
     fork: true
-    pidFilePath: "/var/run/mongodb/mongod.pid"
+    #pidFilePath: "/var/run/mongodb/mongod.pid"
 net:
     port: $MONGODB_PORT
 security:
