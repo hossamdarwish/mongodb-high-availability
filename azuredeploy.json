@@ -223,7 +223,7 @@
     "vmStorageAccountDomain": ".blob.core.windows.net",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworkName'))]",
     "sharedScriptUrl": "[concat('https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/shared_scripts/', variables('osFamilySpec').osName, '/')]",
-    "scriptUrl": "https://raw.githubusercontent.com/hossamdarwish/mongodb-azure-availability/master/",
+    "scriptUrl": "https://raw.githubusercontent.com/hossamdarwish/mongodb-high-availability/master/",
     "templateBaseUrl": "[variables('scriptUrl')]",
     "jumpboxTemplateEnabled": "jumpbox-resources.json",
     "jumpboxTemplateDisabled": "empty-resources.json",
